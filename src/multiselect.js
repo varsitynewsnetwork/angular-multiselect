@@ -21,7 +21,7 @@ angular.module('ui.multiselect', [])
           itemName: match[3],
           source: $parse(match[4]),
           viewMapper: $parse(match[2] || match[1]),
-          modelMapper: $parse(match[1])
+          modelMapper: $parse(match[3])
         };
       }
     };
