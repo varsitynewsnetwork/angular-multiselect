@@ -168,7 +168,8 @@ angular.module('ui.multiselect', [])
           }
 
           function selectMultiple(item) {
-            item.checked = !item.checked;
+            // apparently this line is no longer needed in Angular 1.3+?
+            //item.checked = !item.checked;
             setModelValue(true);
           }
 
